@@ -8,7 +8,6 @@ import InputLabel from "@material-ui/core/InputLabel";
 import Input from "@material-ui/core/Input";
 import Button from "@material-ui/core/Button";
 import FormHelperText from "@material-ui/core/FormHelperText";
-import { Link } from "react-router-dom";
 
 class Login extends Component {
     constructor() {
@@ -40,9 +39,7 @@ class Login extends Component {
 
         let username = "user",
             password = "user",
-            accessToken =
-                "IGQVJYOGphZADFRWEJQN0dEZAGlUQTctU3NfNnFhNkRmQTMzeUJRMHVuM3lGZAl9RQmRIcmtfRzl3YnRiRHhYRGZAUOXZAGUEdiZA3ZAMRERtV1dNQmRJSVNsYjZAobWlOMmZAyNFJGeDNZARVE5MjlfelBnekRSZA1JremRMVXRRWHcw";
-
+            accessToken = "IGQVJXYzkzUVZA6QlVsREk0ZAElGMFhWcjBnRm5lTGsxZAkpwX0tld2thTEtsV0NRck9pekE0UERhNEJMbG15TW5UbEhCc3pibXYydVNEWjFUYVJKdGNXa0R1MkVCMnB1bENEUnBOYjVyM3FlckYyZAk56dE9ZANFg0VXR5UTBj"
         this.setState({ incorrectCredentials: "dispNone" });
         if (
             this.state.username === username &&
@@ -102,15 +99,13 @@ class Login extends Component {
                             </FormControl>
                             <br />
                             <br />
-                            <Link to="/home">
-                                <Button
-                                    variant="contained"
-                                    color="primary"
-                                    onClick={this.loginClickHandler}
-                                >
-                                    LOGIN
-                                </Button>
-                            </Link>
+                            <Button
+                                variant="contained"
+                                color="primary"
+                                onClick={this.loginClickHandler}
+                            >
+                                LOGIN
+                            </Button>
                         </div>
                     </Card>
                 </div>
